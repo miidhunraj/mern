@@ -1,0 +1,6 @@
+const express = require('express')
+const app = express()
+app.get('/', (req, res) => { res.send('Hello, welcome');})
+app.get('/home', (req, res) => { res.send('Welcome to home page');})
+app.get('/profile', (req, res) => { res.send('Welcome to profile page');})
+app.listen(3000)
